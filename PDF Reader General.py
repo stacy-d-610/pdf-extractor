@@ -20,12 +20,12 @@ for page_num in range(len(PDFfilereader.pages)):
     # Append the extracted text to the string
     all_text += page_text
 
-    # Optionally, print the text of each page
-    print(f"Text from page {page_num + 1}:")
-    print(page_text.strip())  # strip() removes leading and trailing whitespace
-    print("-----------------------------")
+    # Print the text of each page by page
+    #print(f"Text from page {page_num + 1}:")
+    #print(page_text.strip())  # strip() removes leading and trailing whitespace
+    #print("-----------------------------")
 
-# Print all extracted text
+# Print all extracted text (not by page)
 print("\n\nAll extracted text from the PDF:")
 print(all_text.strip())  # Strip() to remove leading and trailing whitespace
 

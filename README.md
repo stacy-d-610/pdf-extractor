@@ -6,4 +6,4 @@ This repo consists of two python scripts: PDF Reader General, which extracts all
 
 
 
-### PDF Reader Table
+## PDF Reader Table

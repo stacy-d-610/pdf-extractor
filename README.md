@@ -1,14 +1,14 @@
 # pdf-extractor
 
-This repo consists of two python scripts: PDF Reader General, which extracts all text from a pdf without formatting, and PDF Reader Table, which extracts tables from a PDF and exports them into an Excel file.
+This repo consists of two python scripts: pdf_reader_general, which extracts all text from a pdf without formatting, and pdf_reader_table, which extracts tables from a PDF and exports them into an Excel file.
 
-## PDF Reader General
+## pdf_reader_general
 The library required is PyPDF2, used for working with PDFs in Python.
 
 The code iterates over each page or a specified number of pages (using page_num), extracting text from said pages, and appending the text to an empty string. Trailing and leading whitespaces are removed before displaying the text. However the text and tables are unformatted. 
 
 
-## PDF Reader Table
+## pdf_reader_table
 The libraries required are "pandas" for working with structured data and "read_pdf" from "tabula.io", used to read tables from PDF files.
 
 Use the read_pdf function to read tables from a specified pdf ("sample.pdf" in this case), specify which pages to read from (e.g. pages = "1"), and if multiple tables exist on each page, which tables should be extracted (multiple_tables=True extracts all tables, while multiple_tables=False only extracts the first table on a page).
